@@ -161,11 +161,13 @@ if (placeOrderBtn) {
 
             });
 
-            if (!response.ok) {
+           if (!response.ok) {
 
-                throw new Error("Failed to save order");
+    const errorText = await response.text();
 
-            }
+    throw new Error(errorText);
+
+}
 
             alert("Order placed successfully!");
 
@@ -173,13 +175,13 @@ if (placeOrderBtn) {
 
             window.location.href = "index.html";
 
-        } catch (error) {
+ } catch (error) {
 
-            console.error(error);
+    console.error(error);
 
-            alert("Something went wrong.");
+    alert(error.message);
 
-        }
+}
 
     });
 
