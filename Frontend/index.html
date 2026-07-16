@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <!-- Font Awesome Free CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <title>Document</title>
+</head>
+<body>
+  
+<nav class="bg-white text-black shadow-md fixed z-50 w-full top-0 h-auto">
+  <div class="max-w-7xl mx-auto px-6  ">
+    
+
+    <div class="flex justify-between items-center p-6 border-b">
+
+    <h1 class="text-2xl font-bold">My Store</h1>
+
+    <a href="./cart.html" class="relative">
+
+        🛒
+
+        <span id="cart-count"
+        class="absolute -top-2 -right-3 bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+
+        0
+
+        </span>
+
+    </a>
+
+  </div>
+    <div class="flex items-center justify-between p-6 ">
+       <h1 class=" font-extrabold  ">ADIMCHI-stores</h1>
+    
+
+    <!-- Desktop Menu -->
+        <div class="hidden  lg:flex  space-x-8 items-center">
+         
+          <a  href="./index.html" class="">Home</a>
+          <a  href="./About.html" class="">About</a>
+            
+ 
+           
+ 
+<li class="list-none"><button id="Club-btn" class="group-hover:block">Clubs</button></li>
+<div id="Club-menu" class="hidden absolute left-0 top-20 w-screen bg-white shadow-xl z-50  h-auto">
+  <div class="max-w-7xl mx-auto px-6 py-10  ">
+<div class="flex flex-wrap">
+  <div class="flex-1 list-none">
+  <li class="border-b w-50 font-extrabold p-2">PREMIER LEAGUE</li>
+  <li>Manchester united</li>
+  <li  style="font-size: xx-small;">Red devils official gear</li>
+  <li>Mancity</li>
+  <li style="font-size: xx-small;">City official store</li>
+  <li>Liverpool</li>
+  <li style="font-size: xx-small;">Red official merchaandise</li>
+  <li>Chelsea</li>
+  <li style="font-size: xx-small;">Blue official collection</li>
+  <li>Arsenal</li>
+  <li style="font-size: xx-small;">Gunners official shop</li>
+</div>
+<div class="flex-1 list-none">
+  <li class="border-b w-50 font-extrabold p-2">LA LIGA</li>
+  <li>Real madrid</li>
+  <li  style="font-size: xx-small;">los blancos official</li>
+  <li>Barcelona</li>
+  <li style="font-size: xx-small;">Barca official store</li>
+  <li>Athletico madrid</li>
+  <li style="font-size: xx-small;">Rojiblancos official merchaandise</li>
+  <li>sevilla</li>
+  <li style="font-size: xx-small;">official Merchandize</li>
+  <li>valencia</li>
+  <li style="font-size: xx-small;">Los ches official </li>
+</div>
+  
+ <div class="flex-1 list-none">
+  <li class="border-b w-50 font-extrabold p-2">Serie A</li>
+  <li>Juventus</li>
+  <li  style="font-size: xx-small;">bianconeri official</li>
+  <li>intermilan</li>
+  <li style="font-size: xx-small;"> official store</li>
+  <li>AC milan</li>
+  <li style="font-size: xx-small;">official merchaandise</li>
+  <li>Napoli</li>
+  <li style="font-size: xx-small;">official Merchandize</li>
+  <li>Roma</li>
+  <li style="font-size: xx-small;">Los ches official </li>
+</div>
+ <div class="flex-1 list-none">
+  <li class="border-b w-50 font-extrabold p-2">INTERNATIONAL</li>
+  <li>Japan</li>
+  <li  style="font-size: xx-small;">bianconeri official</li>
+  <li>Spain</li>
+  <li style="font-size: xx-small;"> official store</li>
+  <li>Nigeria</li>
+  <li style="font-size: xx-small;">official merchaandise</li>
+  <li>France</li>
+  <li style="font-size: xx-small;">official Merchandize</li>
+  <li>Ghana</li>
+  <li style="font-size: xx-small;">Los ches official </li>
+</div>
+ 
+
+</div>
+   
+    
+</div>
+
+    
+
+         </div> 
+         <li class="list-none"><button id="Brands-btn" class="group-hover:block">Brands</button></li>
+         <div id="Brands-menu" class="hidden absolute left-0 top-20 w-screen bg-white shadow-xl z-50  h-auto">
+  <div class="max-w-7xl mx-auto px-8 py-10  ">
+<div class="flex flex-wrap">
+  <div class="flex-1 ">
+  <img src="./img/Nike_ Just Do It.jfif" alt="">
+</div>
+<div class="flex-1 list-none">
+  <img src="./img/Datei_Puma Logo_svg – Wikipedia.jfif" alt="">
+</div>
+  
+ <div class="flex-1 list-none">
+  <img src="./img/Adidas Logo.jfif" alt="">
+</div>
+ <div class="flex-1 list-none">
+  <img src="./img/Umbro - Logo.jfif" alt="">
+</div>
+ 
+
+</div>
+   
+    
+</div>
+
+    
+
+         </div>
+       <div class="relative group ">
+        <button id="shop-btn">
+              shop
+       </button>
+      <div id="shop-menu" class="hidden  absolute left-0 px-6 py-4  w-30 z-50 bg-white shadow-xl h-auto">
+<ul>
+  <li class="border-b ">shop</li>
+  <li class="border-b ">Cart</li>
+  <li class="border-b">whishlist</li>
+</ul>
+      </div></div>   
+             <a href="./services.html" class="">
+              contact
+            </a>
+        </div>
+        
+
+        <!-- Hamburger -->
+    <button id="menuBtn" class="lg:hidden absolute right-6 text-3xl mt-2">
+      ☰
+    </button>
+  </div>
+
+  </div>
+
+  <!-- Full Screen Mobile Menu -->
+  <div
+    id="mobileMenu"
+    class="fixed inset-0 bg-white text-black z-50 hidden px-4 py-4 flex-col space-y-8 text-xl lg:hidden "
+  >
+    <!-- Close Button -->
+    <button id="closeBtn" class="absolute  right-6 text-3xl mt-2">
+      ✕
+    </button>
+
+<ul class="list-none"><li class="list-none">
+          <a href="./index.html" class="block px-6 py-4  border-b mt-10  list-none">
+            Home
+          </a>
+ <a href="./index.html" class="block px-6 py-4  border-b   list-none">
+            About
+          </a>
+                   <div id="main-menu"
+     class="absolute   transition-transform duration-300 translate-x-0">
+
+  <div class="block px-6 py-4   -mt-2  " ><button id="clubs-btn2" class="group-hover:block">Club
+  </button></div>
+</div>
+
+<!-- Submenu --> 
+<div id="submenu"
+     class="fixed inset-0  z-50 flex-col
+      bg-white text-black shadow-xl transition-transform duration-300 translate-x-full h-auto">
+
+  <button id="back-btn" class="p-4">
+    ← Back
+  </button>
+
+  
+  <h1 class="border-b block px-6 py-4   font-extrabold p-2">PREMIER LEAGUE</h1>
+  <p class="block px-6 ">Manchester united</p>
+  <p class="block px-6 " style="font-size: xx-small;">Red devils official gear</p>
+  <p class="block px-6 ">Mancity</p>
+  <p class="block px-6 " style="font-size: xx-small;">City official store</p>
+  <p class="block px-6 ">Liverpool</p>
+  <p class="block px-6 " style="font-size: xx-small;">Red official merchaandise</p>
+  <p class="block px-6 ">Chelsea</p>
+  <p class="block px-6 " style="font-size: xx-small;">Blue official collection</p>
+  <p class="block px-6 ">Arsenal</p>
+  <p class="block px-6" style="font-size: xx-small;">Gunners official shop</p>
+
+  <h1 class="border-b block px-6 font-extrabold p-2">LA LIGA</h1>
+  <p class="block px-6">Real madrid</p>
+  <p class="block px-6"  style="font-size: xx-small;">los blancos official</p>
+  <p class="block px-6">Barcelona</p>
+  <p class="block px-6" style="font-size: xx-small;">Barca official store</p>
+  <p class="block px-6">Athletico madrid</p>
+  <p class="block px-6" style="font-size: xx-small;">Rojiblancos official merchaandise</p>
+  <p class="block px-6">sevilla</p>
+  <p class="block px-6" style="font-size: xx-small;">official Merchandize</p>
+  <p class="block px-6">valencia</p>
+  <p class="block px-6" style="font-size: xx-small;">Los ches official </p>
+
+  <h1 class="border-b block px-6  font-extrabold p-2">Serie A</h1>
+  <p class="block px-6">Juventus</p>
+  <p class="block px-6"  style="font-size: xx-small;">bianconeri official</p>
+  <p class="block px-6">intermilan</p>
+  <p class="block px-6" style="font-size: xx-small;"> official store</p>
+  <p class="block px-6">AC milan</p>
+  <p class="block px-6" style="font-size: xx-small;">official merchaandise</p>
+  <p class="block px-6">Napoli</p>
+  <p class="block px-6" style="font-size: xx-small;">official Merchandize</p>
+  <p class="block px-6">Roma</p>
+  <p class="block px-6" style="font-size: xx-small;">Los ches official </p>
+
+  
+  <h1 class="border-b block px-6  font-extrabold p-2">INTERNATIONAL</h1>
+  <p class="block px-6">Japan</p>
+  <p class="block px-6"  style="font-size: xx-small;">bianconeri official</p>
+  <p class="block px-6">Spain</p>
+  <p class="block px-6" style="font-size: xx-small;"> official store</p>
+  <p class="block px-6">Nigeria</p>
+  <p class="block px-6" style="font-size: xx-small;">official merchaandise</p>
+  <p class="block px-6">France</p>
+  <p class="block px-6" style="font-size: xx-small;">official Merchandize</p>
+  <p class="block px-6">Ghana</p>
+  <p class="block px-6" style="font-size: xx-small;">Los ches official </p>
+
+</div>
+<a href="./index.html" class="block px-6 py-4  border-b border-t mt-16  list-none">
+            Shop
+          </a>
+
+               <div id="brands-menu"
+     class="absolute   transition-transform duration-300 translate-x-0">
+
+  <div class="block px-6 py-4 p-5  mt-16 " ><button id="brands-btn" > Brands
+  </button></div>
+</div>
+
+<!-- Submenu --> 
+<div id="brands-submenu"
+     class="fixed inset-0  z-50 flex-col
+      bg-white text-black shadow-xl transition-transform duration-300 translate-x-full h-auto">
+
+  <button id="brand-backbtn" class="p-4">
+    ← Back
+  </button>
+  <div class="flex flex-wrap">
+  <div class="flex-1 ">
+  <img src="./img/Nike_ Just Do It.jfif" alt="">
+</div>
+<div class="flex-1 list-none">
+  <img src="./img/Datei_Puma Logo_svg – Wikipedia.jfif" alt="">
+</div>
+  
+ <div class="flex-1 list-none">
+  <img src="./img/Adidas Logo.jfif" alt="">
+</div>
+ <div class="flex-1 list-none">
+  <img src="./img/Umbro - Logo.jfif" alt="">
+</div>
+ 
+
+</div>
+
+</div>
+
+          
+          <a href="./index.html" class="block px-6 py-4  border-b   list-none">
+            contact
+          </a>
+    </div> 
+    
+       
+
+   
+
+         
+</nav>
+
+<!---hero section----->
+<section class="pt-20 ">
+  <div class="max-w-7xl mx-auto px-6 ">
+<img id="photo" src="./img/Manchester United Gold Lined Badge PNG _ TopPNG.jfif"
+ class="bg-cover w-full ">
+  </div>
+
+</section>
+
+
+<!--------team hero section-->
+<div class="max-w-7xl mx-auto px-6 mt-10">
+
+  <div class="flex justify-between items-center">
+<h1 class="font-extrabold">TOP TEAMS</h1>
+<a href="" class="border-b">see more products <i class="fa-solid fa-arrow-right-long"></i></a>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
+<div><img src="./img/Ajax.jfif" class="object-contain"></div>
+<div><img src="./img/AL HILAL 💙🤍 ARABIA SAUDITA 🇸🇦.jfif" class="object-contain">
+</div>
+<div>
+  <img src="./img/AS Monaco FC vector logo (_EPS + .SVG) download for free" class="object-contain"></div>
+<div><img src="./img/ASTON VILLA FOOTBALL CLUB.jfif" class="object-contain"></div>
+<div><img src="./img/Bayern Munich DLS Kits 2025 – Dream League Soccer 2025 Kits.jfif" class="object-contain"></div>
+<div><img src="./img/Bournemouth logo vector (svg, eps, pdf) formats free download.jfif" class="object-contain"></div>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mb-6 gap-2">
+<div><img src="./img/Club Brugge KV.jfif" class="object-contain"></div>
+<div><img src="./img/download (19).jfif" class="object-contain">
+</div>
+<div>
+  <img src="./img/Download Borussia Dortmund logo on transparent background.jfif" class="object-contain"></div>
+<div><img src="./img/Download Sunderland FC logo on transparent background.jfif"class="object-contain"></div>
+<div><img src="./img/Everton crest_.jfif"class="object-contain"></div>
+<div><img src="./img/FK BodøGlimt - Bodø-NOR.jfif"class="object-contain"></div>
+  </div>
+  <div class="flex justify-between items-center mb-6 mt-10">
+<h1 class="font-extrabold">New arrivals</h1>
+<a href="" class="border-b">See all new arrivals <i class="fa-solid fa-arrow-right-long"></i></a>
+  </div>
+  <div class="flex justify-between items-center mb-6 mt-10">
+<h1 class="font-extrabold">Top Leagues </h1>
+
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 mb-6 gap-2">
+<div><img src="./img/Girona FC.jfif" class="object-contain"></div>
+<div><img src="./img/Liverpool Logo.jfif" class="object-contain">
+</div>
+<div>
+  <img src="./img/Newcastle United Fc Vector Logo _ TopPNG.jfif" class="object-contain"></div>
+<div><img src="./img/Nottingham Forest.jfif" class="object-contain"></div>
+<div><img src="./img/RC Celta de Vigo Logo PNG & Vector (EPS, AI, SVG) - Brandlogos_net.jfif" class="object-contain"></div>
+
+  </div>
+<div class="flex justify-between items-center mb-6 mt-10">
+<h1 class="font-extrabold">Latest products</h1>
+<a href="" class="border-b">See all products <i class="fa-solid fa-arrow-right-long"></i></a>
+  </div>
+   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mb-6 gap-2">
+<div class="product-card">
+  <img src="./img/Ollie Watkins Aston Villa Jerseys, Ollie Watkins Aston Villa Shirts, Merchandise, Gear _ Fanatics Canada.jfif">
+<div class="p-5">
+<p class="font-extrabold">Astonvilla Jersey</p>
+<div class="flex space-x-2 "><p>#25,000</p><p class="line-through">#22,000</p></div>
+<div class="border-b mt-5"></div>
+
+<div class="mt-5">
+  <label class="block font-semibold mt-4 mb-2">
+    Select Size
+</label>
+
+<select class="jersey-size w-full border rounded-lg p-3 mb-4">
+
+    <option value="">Choose Size</option>
+
+    <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+</select>
+  
+  <button
+    class="add-cart w-full bg-black text-white py-3 rounded-lg"
+
+    data-id="Astonvilla"
+    data-name="Astonvilla Jersey"
+    data-price="25000"
+    data-image="img/ASTON VILLA FOOTBALL CLUB.jfif">
+
+      Add to Cart
+
+    </button></div>
+<div class=" border border-black mt-5 p-2"> <a href="./cart.html"><i class="fa-regular fa-eye"></i> VIEW THIS PRODUCT</a></div>
+</div>
+</div>
+<div class="product-card"><img src="./img/Nigeria Soccer Jersey.jfif">
+  <div class="p-5">
+<p class="font-extrabold">Nigeria Jersey</p>
+<div class="flex space-x-2 "><p>#40,000</p><p class="line-through">#42,000</p></div>
+<div class="border-b mt-5"></div>
+<div class="mt-5">
+  <select class="jersey-size w-full border rounded-lg p-3 mb-4">
+
+    <option value="">Choose Size</option>
+
+    <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+</select>
+  
+  <button
+    class="add-cart w-full bg-black text-white py-3 rounded-lg"
+
+    data-id="Nigeria"
+    data-name="Nigeria Jersey"
+    data-price="40000"
+    data-image="img/Nigeria Soccer Jersey.jfif">
+
+      Add to Cart
+
+    </button></div>
+<div class=" border border-black mt-5 p-2"> <a href="./cart.html"><i class="fa-regular fa-eye"></i> VIEW THIS PRODUCT</a></div>
+</div>
+</div>
+<div class="product-card">
+  <img src="./img/Chelsea FC Home 2025-26.jfif">
+<div class="p-5">
+<p class="font-extrabold">Chelsea Jersey</p>
+<div class="flex space-x-2 "><p>#31,000</p><p class="line-through">#32,000</p></div>
+<div class="border-b mt-5"></div>
+<div class="mt-5">
+  <select class="jersey-size w-full border rounded-lg p-3 mb-4">
+
+    <option value="">Choose Size</option>
+
+    <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+</select>
+  <button
+    class="add-cart w-full bg-black text-white py-3 rounded-lg"
+
+    data-id="Chelsea"
+    data-name="Chelsea jersey"
+    data-price="31000"
+    data-image="img/Chelsea FC Home 2025-26.jfif">
+
+      Add to Cart
+
+    </button></div>
+
+<div class=" border border-black mt-5 p-2"> <a href="./cart.html"><i class="fa-regular fa-eye"></i> VIEW THIS PRODUCT</a></div>
+</div></div>
+<div class="bg-white product-card p-5">
+
+    <img
+    src="./img/Arsenal Third Jersey 25-26 Season Player Version.jfif"
+    class=" object-cover rounded-lg">
+
+    <h2 class="text-xl font-bold mt-4">
+        Arsenal jersey
+    </h2>
+
+    <p class="text-gray-500 mb-4">
+        ₦30,000
+    </p>
+    <select class="jersey-size w-full border rounded-lg p-3 mb-4">
+
+    <option value="">Choose Size</option>
+
+    <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+</select>
+
+    <button
+    class="add-cart w-full bg-black text-white py-3 rounded-lg"
+
+    data-id="Arsenal"
+    data-name="Arsenal jersey"
+    data-price="30000"
+    data-image="img/Arsenal Third Jersey 25-26 Season Player Version.jfif">
+
+      Add to Cart
+
+    </button>
+    <div class=" border border-black mt-5 p-2"> <a href="./cart.html"><i class="fa-regular fa-eye"></i> VIEW THIS PRODUCT</a></div>
+
+</div>
+<div class="bg-white product-card p-5">
+
+    <img
+    src="./img/FC Barcelona Home 2024-25.jfif"
+    class=" object-cover rounded-lg">
+
+    <h2 class="text-xl font-bold mt-4">
+        Barcelona Jersey
+    </h2>
+
+    <p class="text-gray-500 mb-4">
+        ₦30,000
+    </p>
+    <select class="jersey-size w-full border rounded-lg p-3 mb-4">
+
+    <option value="">Choose Size</option>
+
+    <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+</select>
+
+    <button
+    class="add-cart w-full bg-black text-white py-3 rounded-lg"
+
+    data-id="Barcelona"
+    data-name="Barcelona Jersey"
+    data-price="30000"
+    data-image="img/FC Barcelona Home 2024-25.jfif">
+
+      Add to Cart
+
+    </button>
+    <div class=" border border-black mt-5 p-2"> <a href="./cart.html"><i class="fa-regular fa-eye"></i> VIEW THIS PRODUCT</a></div>
+
+</div>
+
+
+  </div>
+
+</div>
+
+<!------jersey boots-->
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-wrap">
+<div class="flex-1 "><div class="relative">
+  <img src="./img/vini🤍.jfif" alt="" class="h-200 object-cover rounded-xl">
+<p class="absolute bottom-0 left-4"> shop collection <i class="fa-solid fa-arrow-right-long"></i></p>
+</div></div>
+<div class="flex-1">
+  <div class="relative">
+    <img src="./img/www_ioffer.com_selling_copper4flash" alt="" class="h-100 object-contain rounded-xl">
+  <p class="absolute bottom-0 left-4"> shop collection <i class="fa-solid fa-arrow-right-long"></i></p></div>
+ <div class="relative"><img src="./img/Bota adidas F50 Messi Elite FG.jfif" alt=""class="h-100 object-contain rounded-xl">
+<p class="absolute bottom-0 left-4"> shop collection <i class="fa-solid fa-arrow-right-long"></i></p></div> 
+</div>
+</div>
+<h1 class="mt-10 font-extrabold mb-6 text-2xl">Premier League</h1>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 mb-6 gap-2">
+<div><img src="./img/Chelsea FC Home 2025-26.jfif" class="object-contain"></div>
+<div><img src="./img/Liverpool Logo.jfif" class="object-contain">
+</div>
+<div>
+  <img src="./img/Newcastle United Fc Vector Logo _ TopPNG.jfif" class="object-contain"></div>
+<div><img src="./img/Nottingham Forest.jfif" class="object-contain"></div>
+<div><img src="./img/Arsenal Third Jersey 25-26 Season Player Version.jfif" class="object-contain"></div>
+
+  </div>
+<h1 class="mt-10 font-extrabold mb-6 text-2xl">La liga</h1>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 mb-6 gap-2">
+<div><img src="./img/FC Barcelona Home 2024-25.jfif" class="object-contain"></div>
+<div><img src="./img/Real Madrid  Home 2023-24.jfif" class="object-contain">
+</div>
+<div>
+  <img src="./img/Real Sociedad Logo.jfif" class="object-contain"></div>
+<div><img src="./img/Sevilla🇪🇸.jfif" class="object-contain"></div>
+
+
+  </div>
+</div>
+
+<footer class="w-full bg-amber-50 h-auto p-6 mt-10">
+  <div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row">
+<div class="flex-1 space-y-4">
+<div><h1 class="font-extrabold">ADIMCHI-stores</h1>
+<p>Terms and condition</p>
+<p>shop</p></div>
+</div>
+ <div class="flex-1 space-y-4">
+<div><h1 class="font-extrabold">Customer Service</h1>
+<p>FAQ</p>
+<p>Contact</p>
+<p>Privacy</p>
+<p>Return and Refunds</p></div>
+</div>
+<div class="flex-1 space-y-4">
+<div><h1 class="font-extrabold ">Contact us</h1>
+<p>Do you have any suggestions?</p>
+<p><a href="mailto:chimnaonuel@gmail.com">Email us <i class="fa-solid fa-envelope"></i></a></p>
+<p>Do you need assistance?</p>
+<p>  <a href="tel:+2348067449346">Give us a call <i class="fa-solid fa-phone"></i></a></p>
+<p>Number 1 jersey vendor in Nigeria</p>
+</div>
+</div>
+<div class="flex-1 space-y-4">
+<div><h1 class="font-extrabold"> social media</h1>
+  <a href="https://www.instagram.com/adimchinaobi9/?__pwa=1#">
+            <i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/2348169270270"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="tel:+2348067449346"><i class="fa-solid fa-phone"></i></a>
+          <a href="mailto:chimnaonuel@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          
+</div>
+</div>
+  </div>
+ 
+</div>
+  </div>
+
+
+
+</footer>
+    
+   <script src="./script.js"></script> 
+   <script src="./product.js"></script>
+   <script src="./cartcount.js"></script>
+   
+</body>
+</html>

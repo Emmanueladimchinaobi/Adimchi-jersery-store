@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Document</title>
+</head>
+<body>
+
+     <nav class="bg-white text-black shadow-md fixed z-50 w-full top-0 h-auto">
+  <div class="max-w-7xl mx-auto px-6  ">
+
+    <div class="flex justify-between items-center p-6 border-b">
+
+    <h1 class="text-2xl font-bold">My Store</h1>
+
+    <a href="./cart.html" class="relative">
+
+        🛒
+
+        <span id="cart-count"
+        class="absolute -top-2 -right-3 bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+
+        0
+
+        </span>
+
+    </a>
+
+  </div>
+    
+    <div class="flex items-center justify-between p-6 ">
+       <h1 class=" font-extrabold  ">ADIMCHI-stores</h1>
+    
+
+    <!-- Desktop Menu -->
+        <div class="hidden  lg:flex  space-x-8 items-center">
+         
+          <a  href="./index.html" class="">Home</a>
+          <a  href="./About.html" class="">About</a>
+            
+ 
+           
+ 
+<li class="list-none"><button id="Club-btn" class="group-hover:block">Clubs</button></li>
+<div id="Club-menu" class="hidden absolute left-0 top-20 w-screen bg-white shadow-xl z-50  h-auto">
+  <div class="max-w-7xl mx-auto px-6 py-10  ">
+<div class="flex flex-wrap">
+  <div class="flex-1 list-none">
+  <li class="border-b w-50 font-extrabold p-2">PREMIER LEAGUE</li>
+  <li>Manchester united</li>
+  <li  style="font-size: xx-small;">Red devils official gear</li>
+  <li>Mancity</li>
+  <li style="font-size: xx-small;">City official store</li>
+  <li>Liverpool</li>
+  <li style="font-size: xx-small;">Red official merchaandise</li>
+  <li>Chelsea</li>
+  <li style="font-size: xx-small;">Blue official collection</li>
+  <li>Arsenal</li>
+  <li style="font-size: xx-small;">Gunners official shop</li>
+</div>
+<div class="flex-1 list-none">
+  <li class="border-b w-50 font-extrabold p-2">LA LIGA</li>
+  <li>Real madrid</li>
+  <li  style="font-size: xx-small;">los blancos official</li>
+  <li>Barcelona</li>
+  <li style="font-size: xx-small;">Barca official store</li>
+  <li>Athletico madrid</li>
+  <li style="font-size: xx-small;">Rojiblancos official merchaandise</li>
+  <li>sevilla</li>
+  <li style="font-size: xx-small;">official Merchandize</li>
+  <li>valencia</li>
+  <li style="font-size: xx-small;">Los ches official </li>
+</div>
+  
+ <div class="flex-1 list-none">
+  <li class="border-b w-50 font-extrabold p-2">Serie A</li>
+  <li>Juventus</li>
+  <li  style="font-size: xx-small;">bianconeri official</li>
+  <li>intermilan</li>
+  <li style="font-size: xx-small;"> official store</li>
+  <li>AC milan</li>
+  <li style="font-size: xx-small;">official merchaandise</li>
+  <li>Napoli</li>
+  <li style="font-size: xx-small;">official Merchandize</li>
+  <li>Roma</li>
+  <li style="font-size: xx-small;">Los ches official </li>
+</div>
+ <div class="flex-1 list-none">
+  <li class="border-b w-50 font-extrabold p-2">INTERNATIONAL</li>
+  <li>Japan</li>
+  <li  style="font-size: xx-small;">bianconeri official</li>
+  <li>Spain</li>
+  <li style="font-size: xx-small;"> official store</li>
+  <li>Nigeria</li>
+  <li style="font-size: xx-small;">official merchaandise</li>
+  <li>France</li>
+  <li style="font-size: xx-small;">official Merchandize</li>
+  <li>Ghana</li>
+  <li style="font-size: xx-small;">Los ches official </li>
+</div>
+ 
+
+</div>
+   
+    
+</div>
+
+    
+
+         </div> 
+         <li class="list-none"><button id="Brands-btn" class="group-hover:block">Brands</button></li>
+         <div id="Brands-menu" class="hidden absolute left-0 top-20 w-screen bg-white shadow-xl z-50  h-auto">
+  <div class="max-w-7xl mx-auto px-8 py-10  ">
+<div class="flex flex-wrap">
+  <div class="flex-1 ">
+  <img src="./img/Nike_ Just Do It.jfif" alt="">
+</div>
+<div class="flex-1 list-none">
+  <img src="./img/Datei_Puma Logo_svg – Wikipedia.jfif" alt="">
+</div>
+  
+ <div class="flex-1 list-none">
+  <img src="./img/Adidas Logo.jfif" alt="">
+</div>
+ <div class="flex-1 list-none">
+  <img src="./img/Umbro - Logo.jfif" alt="">
+</div>
+ 
+
+</div>
+   
+    
+</div>
+
+    
+
+         </div>
+       <div class="relative group ">
+        <button id="shop-btn">
+              shop
+       </button>
+      <div id="shop-menu" class="hidden  absolute left-0 px-6 py-4  w-30 z-50 bg-white shadow-xl h-auto">
+<ul>
+  <li class="border-b ">shop</li>
+  <li class="border-b ">Cart</li>
+  <li class="border-b">whishlist</li>
+</ul>
+      </div></div>   
+             <a href="./services.html" class="">
+              contact
+            </a>
+        </div>
+        
+
+        <!-- Hamburger -->
+    <button id="menuBtn" class="lg:hidden absolute  right-6 text-3xl mt-2">
+      ☰
+    </button>
+  </div>
+
+  </div>
+
+  <!-- Full Screen Mobile Menu -->
+  <div
+    id="mobileMenu"
+    class="fixed inset-0 bg-white text-black z-50 hidden px-4 py-4 flex-col space-y-8 text-xl lg:hidden "
+  >
+    <!-- Close Button -->
+    <button id="closeBtn" class="absolute top-2 right-6 text-3xl mt-2">
+      ✕
+    </button>
+
+<ul class="list-none"><li class="list-none">
+          <a href="./index.html" class="block px-6 py-4  border-b mt-10  list-none">
+            Home
+          </a>
+ <a href="./index.html" class="block px-6 py-4  border-b   list-none">
+            About
+          </a>
+                   <div id="main-menu"
+     class="absolute   transition-transform duration-300 translate-x-0">
+
+  <div class="block px-6 py-4   -mt-2  " ><button id="clubs-btn2" class="group-hover:block">Club
+  </button></div>
+</div>
+
+<!-- Submenu --> 
+<div id="submenu"
+     class="fixed inset-0  z-50 flex-col
+      bg-white text-black shadow-xl transition-transform duration-300 translate-x-full h-auto">
+
+  <button id="back-btn" class="p-4">
+    ← Back
+  </button>
+
+  
+  <h1 class="border-b block px-6 py-4   font-extrabold p-2">PREMIER LEAGUE</h1>
+  <p class="block px-6 ">Manchester united</p>
+  <p class="block px-6 " style="font-size: xx-small;">Red devils official gear</p>
+  <p class="block px-6 ">Mancity</p>
+  <p class="block px-6 " style="font-size: xx-small;">City official store</p>
+  <p class="block px-6 ">Liverpool</p>
+  <p class="block px-6 " style="font-size: xx-small;">Red official merchaandise</p>
+  <p class="block px-6 ">Chelsea</p>
+  <p class="block px-6 " style="font-size: xx-small;">Blue official collection</p>
+  <p class="block px-6 ">Arsenal</p>
+  <p class="block px-6" style="font-size: xx-small;">Gunners official shop</p>
+
+  <h1 class="border-b block px-6 font-extrabold p-2">LA LIGA</h1>
+  <p class="block px-6">Real madrid</p>
+  <p class="block px-6"  style="font-size: xx-small;">los blancos official</p>
+  <p class="block px-6">Barcelona</p>
+  <p class="block px-6" style="font-size: xx-small;">Barca official store</p>
+  <p class="block px-6">Athletico madrid</p>
+  <p class="block px-6" style="font-size: xx-small;">Rojiblancos official merchaandise</p>
+  <p class="block px-6">sevilla</p>
+  <p class="block px-6" style="font-size: xx-small;">official Merchandize</p>
+  <p class="block px-6">valencia</p>
+  <p class="block px-6" style="font-size: xx-small;">Los ches official </p>
+
+  <h1 class="border-b block px-6  font-extrabold p-2">Serie A</h1>
+  <p class="block px-6">Juventus</p>
+  <p class="block px-6"  style="font-size: xx-small;">bianconeri official</p>
+  <p class="block px-6">intermilan</p>
+  <p class="block px-6" style="font-size: xx-small;"> official store</p>
+  <p class="block px-6">AC milan</p>
+  <p class="block px-6" style="font-size: xx-small;">official merchaandise</p>
+  <p class="block px-6">Napoli</p>
+  <p class="block px-6" style="font-size: xx-small;">official Merchandize</p>
+  <p class="block px-6">Roma</p>
+  <p class="block px-6" style="font-size: xx-small;">Los ches official </p>
+
+  
+  <h1 class="border-b block px-6  font-extrabold p-2">INTERNATIONAL</h1>
+  <p class="block px-6">Japan</p>
+  <p class="block px-6"  style="font-size: xx-small;">bianconeri official</p>
+  <p class="block px-6">Spain</p>
+  <p class="block px-6" style="font-size: xx-small;"> official store</p>
+  <p class="block px-6">Nigeria</p>
+  <p class="block px-6" style="font-size: xx-small;">official merchaandise</p>
+  <p class="block px-6">France</p>
+  <p class="block px-6" style="font-size: xx-small;">official Merchandize</p>
+  <p class="block px-6">Ghana</p>
+  <p class="block px-6" style="font-size: xx-small;">Los ches official </p>
+
+</div>
+<a href="./index.html" class="block px-6 py-4  border-b border-t mt-16  list-none">
+            Shop
+          </a>
+
+               <div id="brands-menu"
+     class="absolute   transition-transform duration-300 translate-x-0">
+
+  <div class="block px-6 py-4 p-5  mt-16 " ><button id="brands-btn" > Brands
+  </button></div>
+</div>
+
+<!-- Submenu --> 
+<div id="brands-submenu"
+     class="fixed inset-0  z-50 flex-col
+      bg-white text-black shadow-xl transition-transform duration-300 translate-x-full h-auto">
+
+  <button id="brand-backbtn" class="p-4">
+    ← Back
+  </button>
+  <div class="flex flex-wrap">
+  <div class="flex-1 ">
+  <img src="./img/Nike_ Just Do It.jfif" alt="">
+</div>
+<div class="flex-1 list-none">
+  <img src="./img/Datei_Puma Logo_svg – Wikipedia.jfif" alt="">
+</div>
+  
+ <div class="flex-1 list-none">
+  <img src="./img/Adidas Logo.jfif" alt="">
+</div>
+ <div class="flex-1 list-none">
+  <img src="./img/Umbro - Logo.jfif" alt="">
+</div>
+ 
+
+</div>
+
+</div>
+
+          
+          <a href="./index.html" class="block px-6 py-4  border-b   list-none">
+            contact
+          </a>
+    </div> 
+    
+       
+
+   
+
+         
+</nav>
+<div class="max-w-7xl mx-auto px-6">
+<form id="checkout-form" class="pt-50 flex flex-col">
+
+    <input
+        type="text"
+        placeholder="Full Name"
+        required
+    >
+
+    <input
+        type="email"
+        placeholder="Email Address"
+        required
+    >
+
+    <input
+        type="tel"
+        placeholder="Phone Number"
+        required
+    >
+
+    <textarea
+        placeholder="Delivery Address"
+        required
+    ></textarea>
+
+   
+</form>
+</div>
+
+<div class="bg-white shadow-lg rounded-lg p-6 mb-8">
+
+    <h2 class="text-2xl font-bold mb-6">
+        Customer Information
+    </h2>
+
+    <div class="grid gap-4">
+
+        <input
+            id="customerName"
+            type="text"
+            placeholder="Full Name"
+            class="border rounded-lg p-3 w-full"
+        >
+
+        <input
+            id="phone"
+            type="text"
+            placeholder="Phone Number"
+            class="border rounded-lg p-3 w-full"
+        >
+
+        <textarea
+            id="address"
+            placeholder="Delivery Address"
+            class="border rounded-lg p-3 w-full"
+            rows="3"
+        ></textarea>
+
+    </div>
+
+</div>
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-white shadow-lg rounded-lg p-6">
+
+    <h2 class="text-2xl font-bold mb-6">
+        Order Summary
+    </h2>
+
+    <div id="order-summary"></div>
+
+    <hr class="my-6">
+
+  <div class="mt-6">
+
+    <hr class="mb-4">
+
+    <div class="flex justify-between text-2xl font-bold">
+        <span>Total</span>
+        <span id="grand-total">₦0</span>
+    </div>
+
+</div>
+
+</div>
+</div>
+
+
+<div class="bg-gray-100 max-w-7xl mx-auto px-6 rounded-lg p-6 mt-8">
+
+    <h2 class="text-2xl font-bold mb-4">
+        Bank Transfer
+    </h2>
+
+    <p class="mb-2">
+        Please transfer the total amount to:
+    </p>
+
+    <div class="space-y-2">
+
+        <p>
+            <strong>Bank:</strong> Access Bank
+        </p>
+
+        <p>
+            <strong>Account Name:</strong> Jhayleoo Investment Inc.
+        </p>
+
+        <p>
+            <strong>Account Number:</strong>
+            <span id="accountNumber">0123456789</span>
+        </p>
+
+    </div>
+
+    <button
+        id="copyAccount"
+        class="mt-4 bg-black text-white px-4 py-2 rounded-lg">
+
+        Copy Account Number
+
+    </button>
+    <button
+    id="confirmPayment"
+    class="w-full bg-green-600 text-white py-4 rounded-lg mt-6">
+
+    I Have Made Payment
+
+</button>
+<label class="block font-semibold mt-6 mb-2">
+    Transaction Reference
+</label>
+
+<input
+    id="paymentReference"
+    type="text"
+    placeholder="Enter your bank transfer reference"
+    class="w-full border rounded-lg p-3">
+
+</div>
+<button
+    id="placeOrder"
+    class="bg-black text-white px-6 py-3 rounded-lg w-full mt-6 hover:bg-gray-800"
+>
+    Place Order
+</button>
+
+
+
+
+
+<footer class="w-full bg-amber-50 h-auto p-10 mt-50 ">
+  <div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row">
+<div class="flex-1 space-y-4">
+<div><h1 class="font-extrabold">ADIMCHI-stores</h1>
+<p>Terms and condition</p>
+<p>shop</p></div>
+</div>
+ <div class="flex-1 space-y-4">
+<div><h1 class="font-extrabold">Customer Service</h1>
+<p>FAQ</p>
+<p>Contact</p>
+<p>Privacy</p>
+<p>Return and Refunds</p></div>
+</div>
+<div class="flex-1 space-y-4">
+<div><h1 class="font-extrabold ">Contact us</h1>
+<p>Do you have any suggestions?</p>
+<p><a href="mailto:chimnaonuel@gmail.com">Email us <i class="fa-solid fa-envelope"></i></a></p>
+<p>Do you need assistance?</p>
+<p>  <a href="tel:+2348067449346">Give us a call <i class="fa-solid fa-phone"></i></a></p>
+<p>Number 1 jersey vendor in Nigeria</p>
+</div>
+</div>
+<div class="flex-1 space-y-4">
+<div><h1 class="font-extrabold"> social media</h1>
+  <a href="https://www.instagram.com/adimchinaobi9/?__pwa=1#">
+            <i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/2348169270270"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="tel:+2348067449346"><i class="fa-solid fa-phone"></i></a>
+          <a href="mailto:chimnaonuel@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          
+</div>
+</div>
+  </div>
+ 
+</div>
+  </div>
+
+
+
+</footer>
+  <script src="./script.js"></script>  
+  <script src="./checkout.js"></script>
+  <script src="./cartcount.js"></script>
+</body>
+</html>
