@@ -2,7 +2,7 @@ console.log("Admin Orders Loaded");
 
 async function loadOrders() {
     try {
-        const response = await fetch("http://localhost:5000/api/orders");
+        const response = await fetch("https://adimchi-jersery-store-1.onrender.com/api/orders");
 
         if (!response.ok) {
             throw new Error("Failed to fetch orders");
