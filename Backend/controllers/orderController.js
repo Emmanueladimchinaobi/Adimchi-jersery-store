@@ -8,11 +8,17 @@ exports.createOrder = async (req, res) => {
 
         const order = await Order.create(req.body);
 
-        await sendOrderEmail(order);
-
+        // Send success response immediately
         res.status(201).json(order);
 
+        // Send email in the background
+        sendOrderEmail(order)
+            .then(() => console.log("✅ Email sent"))
+            .catch(err => console.error("❌ Email failed:", err));
+
     } catch (error) {
+
+        console.error(error);
 
         res.status(500).json({
             message: error.message
