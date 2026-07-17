@@ -1,6 +1,9 @@
 const dotenv = require("dotenv");
 dotenv.config();
-console.log("API Key:", process.env.RESEND_API_KEY);
+console.log(
+  "RESEND KEY:",
+  process.env.RESEND_API_KEY?.substring(0, 20)
+);
 console.log("Owner Email:", process.env.OWNER_EMAIL);
 const express = require("express");
 const cors = require("cors");
