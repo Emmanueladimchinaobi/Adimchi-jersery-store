@@ -109,10 +109,10 @@ brandbackbtn.addEventListener("click", () => {
 
 
  const images = [
-      "img/Inter Milan vector logo available to download for free_ Football Club Internazionale Milano crest in vector (.EPS + .SVG + .CDR) format",
-      "img/Hasil Penelusuran Gambar Google untuk https___pngdownload_io_wp-content_uploads_2023_12_FC-Barcelona-Logo-Iconic-Football-Club-Emblem-PNG-Transparent-Symbol-of-Passion-and-Excellence-jpg.webp",
+      "img/download (24).jfif",
+      "img/Football kit wallpaper for smartphone.jfif",
       "img/Juventus.jfif",
-      "img/Manchester United Gold Lined Badge PNG _ TopPNG.jfif"
+      "img/download (24).jfif"
   ];
 
     let currentIndex = 0;
