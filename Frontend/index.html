@@ -10,30 +10,15 @@
 </head>
 <body>
   
-<nav class="bg-white text-black shadow-md fixed z-50 w-full top-0 h-auto">
+<nav class="bg-white text-black shadow-md fixed z-50 w-full top-0 h-auto ">
   <div class="max-w-7xl mx-auto px-6  ">
     
-
-    <div class="flex justify-between items-center p-6 border-b">
-
-    <h1 class="text-2xl font-bold">My Store</h1>
-
-    <a href="./cart.html" class="relative">
-
-        🛒
-
-        <span id="cart-count"
-        class="absolute -top-2 -right-3 bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-
-        0
-
-        </span>
-
-    </a>
-
-  </div>
     <div class="flex items-center justify-between p-6 ">
-       <h1 class=" font-extrabold  ">ADIMCHI-stores</h1>
+       <div class="animate-gentle ">
+        <button id="shop-btn" class="border border-black px-4 py-2 rounded-2xl hover:bg-gray-500 active:bg-gray-600">
+             <a href="#shop">shop with us</a> 
+       </button>
+      </div> 
     
 
     <!-- Desktop Menu -->
@@ -139,27 +124,37 @@
     
 
          </div>
-       <div class="relative group ">
-        <button id="shop-btn">
-              <a href="./jersey.html">shop</a>
-       </button>
-      <div id="shop-menu" class="hidden  absolute left-0 px-6 py-4  w-30 z-50 bg-white shadow-xl h-auto">
-<ul>
-  <li class="border-b ">shop</li>
-  <li class="border-b ">Cart</li>
-  <li class="border-b">whishlist</li>
-</ul>
-      </div></div>   
-             <a href="./services.html" class="">
+         
+             <a href="https://wa.me/2348169270270?text=Hello,I'm interested in purchasing a jersey." class="">
               contact
             </a>
         </div>
         
+<div><a href="./cart.html" class="relative text-2xl">
 
+        🛒 
+
+        <span id="cart-count"
+        class="absolute -top-2 -right-3 bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+
+        0
+
+        </span>
+
+    </a></div>
+     
+      <div>
         <!-- Hamburger -->
-    <button id="menuBtn" class="lg:hidden absolute right-6 text-3xl mt-2">
+    <button id="menuBtn" class="lg:hidden  text-3xl right-0 ">
       ☰
     </button>
+      </div>
+    
+    
+    
+
+    
+    
   </div>
 
   </div>
@@ -167,7 +162,11 @@
   <!-- Full Screen Mobile Menu -->
   <div
     id="mobileMenu"
-    class="fixed inset-0 bg-white text-black z-50 hidden px-4 py-4 flex-col space-y-8 text-xl lg:hidden "
+    class=" fixed inset-0 bg-white text-black z-50
+         flex-col space-y-8 text-xl lg:hidden
+         opacity-0 -translate-x-full
+         pointer-events-none
+         transition-all duration-700 ease-in-out left-0"
   >
     <!-- Close Button -->
     <button id="closeBtn" class="absolute  right-6 text-3xl mt-2">
@@ -175,25 +174,25 @@
     </button>
 
 <ul class="list-none"><li class="list-none">
-          <a href="./index.html" class="block px-6 py-4  border-b mt-10  list-none">
+          <a href="./index.html" class="block px-6 py-4  border-b mt-10  list-none t">
             Home
           </a>
  <a href="./index.html" class="block px-6 py-4  border-b   list-none">
             About
           </a>
-                   <div id="main-menu"
-     class="absolute   transition-transform duration-300 translate-x-0">
+                   
 
-  <div class="block px-6 py-4   -mt-2  " ><button id="clubs-btn2" class="group-hover:block">Club
+  <div class="block px-6 py-4 border-b " ><button id="clubsbtn2" class="group-hover:block">Club
   </button></div>
-</div>
+
 
 <!-- Submenu --> 
 <div id="submenu"
      class="fixed inset-0  z-50 flex-col
-      bg-white text-black shadow-xl transition-transform duration-300 translate-x-full h-auto">
+      bg-white text-black shadow-xl transition-all duration-700 ease-in-out -translate-x-full h-auto opacity-0  pointer-events-none
+      left-0">
 
-  <button id="back-btn" class="p-4">
+  <button id="backbtn" class="p-4">
     ← Back
   </button>
 
@@ -248,23 +247,21 @@
   <p class="block px-6" style="font-size: xx-small;">Los ches official </p>
 
 </div>
-<a href="./jersey.html" class="block px-6 py-4  border-b border-t mt-16  list-none">
-            Shop
-          </a>
 
-               <div id="brands-menu"
-     class="absolute   transition-transform duration-300 translate-x-0">
 
-  <div class="block px-6 py-4 p-5  mt-16 " ><button id="brands-btn" > Brands
+               
+
+  <div class="block px-6 py-4 border-b"><button id="Brandbtn2" class="group-hover:block"> Brands
   </button></div>
-</div>
+
 
 <!-- Submenu --> 
-<div id="brands-submenu"
-     class="fixed inset-0  z-50 flex-col
-      bg-white text-black shadow-xl transition-transform duration-300 translate-x-full h-auto">
+<div id="brandsubmenu"
+     class="fixed inset-0 bg-white text-black z-50
+         flex-col space-y-8 text-xl lg:hidden
+         transition-all duration-700 ease-in-out -translate-x-full h-auto opacity-0  pointer-events-none right-0 ">
 
-  <button id="brand-backbtn" class="p-4">
+  <button id="brandbackbtn" class="p-4">
     ← Back
   </button>
   <div class="flex flex-wrap">
@@ -288,7 +285,8 @@
 </div>
 
           
-          <a href="./index.html" class="block px-6 py-4  border-b   list-none">
+          <a href="https://wa.me/2348169270270?text=Hello,I'm interested in purchasing a jersey."
+           class="block px-6 py-4  border-b   list-none">
             contact
           </a>
     </div> 
@@ -301,26 +299,29 @@
 </nav>
 
 <!---hero section----->
-<section class=" w-full bg-black ">
+<section class=" w-full bg-black  ">
   <div class="max-w-7xl mx-auto px-6  pt-50 flex items-center justify-center">
 <img id="photo" src="./img/download (25).jfif"
  class="bg-contain   h-100">
   </div>
 
 </section>
-<div class="max-w-7xl mx-auto px-6 ">
-  <div class="flex justify-between items-center mb-6 mt-10">
-<h1 class="font-extrabold">Latest products</h1>
 
-  </div>
+ 
+<h1 id="shop"  class="font-extrabold pt-10 mb-10 max-w-7xl mx-auto px-6">Latest products</h1>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mb-6 gap-2 space-y-10">
-<div class="product-card">
-  <img src="./img/Ollie Watkins Aston Villa Jerseys, Ollie Watkins Aston Villa Shirts, Merchandise, Gear _ Fanatics Canada.jfif">
+  
+<div  class="max-w-7xl mx-auto px-6 ">
+ 
+
+  <div  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-6 gap-2 space-y-10  ">
+<div class="product-card product ">
+  <img src="./img/Ollie Watkins Aston Villa Jerseys, Ollie Watkins Aston Villa Shirts, Merchandise, Gear _ Fanatics Canada.jfif"
+  class="animate-gentle">
 <div class="p-5">
 <p class="font-extrabold">Astonvilla Jersey</p>
 <div class="flex space-x-2 "><p>#25,000</p><p class="line-through">#22,000</p></div>
-<div class="border-b mt-5"></div>
+
 
 <div class="mt-5">
   <label class="block font-semibold mt-4 mb-2">
@@ -354,14 +355,14 @@
       Add to Cart
 
     </button></div>
-<div class=" border border-black mt-5 p-2"> <a href="./cart.html"><i class="fa-regular fa-eye"></i> VIEW THIS PRODUCT</a></div>
+
 </div>
 </div>
-<div class="product-card"><img src="./img/Nigeria Soccer Jersey.jfif">
+<div class="product-card product"><img src="./img/Nigeria Soccer Jersey.jfif" class="animate-gentle">
   <div class="p-5">
 <p class="font-extrabold">Nigeria Jersey</p>
 <div class="flex space-x-2 "><p>#40,000</p><p class="line-through">#42,000</p></div>
-<div class="border-b mt-5"></div>
+
 <div class="mt-5">
   <select class="jersey-size w-full border rounded-lg p-3 mb-4">
 
@@ -390,15 +391,15 @@
       Add to Cart
 
     </button></div>
-<div class=" border border-black mt-5 p-2"> <a href="./cart.html"><i class="fa-regular fa-eye"></i> VIEW THIS PRODUCT</a></div>
+
 </div>
 </div>
-<div class="product-card">
-  <img src="./img/Chelsea FC Home 2025-26.jfif">
+<div class="product-card product">
+  <img src="./img/Chelsea FC Home 2025-26.jfif" class="animate-gentle">
 <div class="p-5">
 <p class="font-extrabold">Chelsea Jersey</p>
 <div class="flex space-x-2 "><p>#31,000</p><p class="line-through">#32,000</p></div>
-<div class="border-b mt-5"></div>
+
 <div class="mt-5">
   <select class="jersey-size w-full border rounded-lg p-3 mb-4">
 
@@ -427,22 +428,22 @@
 
     </button></div>
 
-<div class=" border border-black mt-5 p-2"> <a href="./cart.html"><i class="fa-regular fa-eye"></i> VIEW THIS PRODUCT</a></div>
+
 </div></div>
-<div class="bg-white product-card p-5">
+<div class="bg-white product-card p-5 product">
 
     <img
     src="./img/Arsenal Third Jersey 25-26 Season Player Version.jfif"
-    class=" object-cover rounded-lg">
+    class=" object-cover rounded-lg animate-gentle">
 
     <h2 class="text-xl font-bold mt-4">
         Arsenal jersey
     </h2>
 
-    <p class="text-gray-500 mb-4">
+    <p class="text-black mb-4">
         ₦30,000
     </p>
-    <select class="jersey-size w-full border rounded-lg p-3 mb-4">
+    <select class="jersey-size w-full border rounded-lg  p-3 mb-4">
 
     <option value="">Choose Size</option>
 
@@ -469,20 +470,20 @@
       Add to Cart
 
     </button>
-    <div class=" border border-black mt-5 p-2"> <a href="./cart.html"><i class="fa-regular fa-eye"></i> VIEW THIS PRODUCT</a></div>
+    
 
 </div>
-<div class="bg-white product-card p-5">
+<div class="bg-white product-card p-5 product">
 
     <img
     src="./img/FC Barcelona Home 2024-25.jfif"
-    class=" object-cover rounded-lg">
+    class=" object-cover rounded-lg animate-gentle">
 
     <h2 class="text-xl font-bold mt-4">
         Barcelona Jersey
     </h2>
 
-    <p class="text-gray-500 mb-4">
+    <p class="text-black mb-4">
         ₦30,000
     </p>
     <select class="jersey-size w-full border rounded-lg p-3 mb-4">
@@ -512,14 +513,300 @@
       Add to Cart
 
     </button>
-    <div class=" border border-black mt-5 p-2"> <a href="./cart.html"><i class="fa-regular fa-eye"></i> VIEW THIS PRODUCT</a></div>
+    
 
 </div>
 
+<div class="product-card product">
+  <img src="./img/Real Madrid  Home 2023-24.jfif" class="animate-gentle">
+<div class="p-5">
+<p class="font-extrabold">Realmadrid Jersey</p>
+<div class="flex space-x-2 "><p>#25,000</p><p class="line-through">#22,000</p></div>
+
+
+<div class="mt-5">
+  <label class="block font-semibold mt-4 mb-2">
+    Select Size
+</label>
+
+<select class="jersey-size w-full border rounded-lg p-3 mb-4">
+
+    <option value="">Choose Size</option>
+
+    <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+</select>
+  
+  <button
+    class="add-cart w-full bg-black text-white py-3 rounded-lg"
+
+    data-id="Realmadrid"
+    data-name="Realmadrid Jersey"
+    data-price="25000"
+    data-image="img/Real Madrid  Home 2023-24.jfif">
+
+      Add to Cart
+
+    </button></div>
+
+</div>
+</div>
+<div class="product-card product"><img src="./img/adidas Benfica Home Shirt 2024 2025 Juniors - 13 Years _ Red.jfif" class="animate-gentle">
+  <div class="p-5">
+<p class="font-extrabold">Benfica Jersey</p>
+<div class="flex space-x-2 "><p>#40,000</p><p class="line-through">#42,000</p></div>
+
+<div class="mt-5">
+  <select class="jersey-size w-full border rounded-lg p-3 mb-4">
+
+    <option value="">Choose Size</option>
+
+    <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+</select>
+  
+  <button
+    class="add-cart w-full bg-black text-white py-3 rounded-lg"
+
+    data-id="Benfica"
+    data-name="Benfica jersey"
+    data-price="40000"
+    data-image="img/adidas Benfica Home Shirt 2024 2025 Juniors - 13 Years _ Red.jfif">
+
+      Add to Cart
+
+    </button></div>
+
+</div>
+</div>
+<div class="product-card product">
+  <img src="./img/Chelsea FC Home 2025-26.jfif" class="animate-gentle">
+<div class="p-5">
+<p class="font-extrabold">Chelsea Jersey</p>
+<div class="flex space-x-2 "><p>#31,000</p><p class="line-through">#32,000</p></div>
+
+<div class="mt-5">
+  <select class="jersey-size w-full border rounded-lg p-3 mb-4">
+
+    <option value="">Choose Size</option>
+
+    <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+</select>
+  <button
+    class="add-cart w-full bg-black text-white py-3 rounded-lg"
+
+    data-id="Chelsea"
+    data-name="Chelsea jersey"
+    data-price="31000"
+    data-image="img/Chelsea FC Home 2025-26.jfif">
+
+      Add to Cart
+
+    </button></div>
+
+
+</div></div>
+<div class="bg-white product-card p-5 product">
+
+    <img
+    src="./img/Atletico Madrid 🇪🇸.jfif"
+    class=" object-cover rounded-lg animate-gentle">
+
+    <h2 class="text-xl font-bold mt-4">
+        Athletico madrid jersey
+    </h2>
+
+    <p class="text-black mb-4">
+        ₦30,000
+    </p>
+    <select class="jersey-size w-full border rounded-lg p-3 mb-4">
+
+    <option value="">Choose Size</option>
+
+    <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+</select>
+
+    <button
+    class="add-cart w-full bg-black text-white py-3 rounded-lg"
+
+    data-id="Athletico madrid"
+    data-name="Athletico madrid jersey"
+    data-price="30000"
+    data-image="img/Atletico Madrid 🇪🇸.jfif">
+
+      Add to Cart
+
+    </button>
+    
+
+</div>
+<div class="bg-white product-card p-5 product">
+
+    <img
+    src="./img/download (23).jfif"
+    class=" object-cover rounded-lg animate-gentle">
+
+    <h2 class="text-xl font-bold mt-4">
+        Manchester united jersey
+    </h2>
+
+    <p class="text-black mb-4">
+        ₦30,000
+    </p>
+    <select class="jersey-size w-full border rounded-lg p-3 mb-4">
+
+    <option value="">Choose Size</option>
+
+    <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+</select>
+
+    <button
+    class="add-cart w-full bg-black text-white py-3 rounded-lg"
+
+    data-id="Manchesterunited"
+    data-name="Manchesterunited Jersey"
+    data-price="30000"
+    data-image="img/download (23).jfif">
+
+      Add to Cart
+
+    </button>
+    
+
+</div>
+
+<div class="product-card product ">
+  <img src="./img/Ollie Watkins Aston Villa Jerseys, Ollie Watkins Aston Villa Shirts, Merchandise, Gear _ Fanatics Canada.jfif"
+  class="animate-gentle">
+<div class="p-5">
+<p class="font-extrabold">Astonvilla Jersey</p>
+<div class="flex space-x-2 "><p>#25,000</p><p class="line-through">#22,000</p></div>
+
+
+<div class="mt-5">
+  <label class="block font-semibold mt-4 mb-2">
+    Select Size
+</label>
+
+<select class="jersey-size w-full border rounded-lg p-3 mb-4">
+
+    <option value="">Choose Size</option>
+
+    <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+</select>
+  
+  <button
+    class="add-cart w-full bg-black text-white py-3 rounded-lg"
+
+    data-id="Astonvilla"
+    data-name="Astonvilla Jersey"
+    data-price="25000"
+    data-image="img/ASTON VILLA FOOTBALL CLUB.jfif">
+
+      Add to Cart
+
+    </button></div>
+
+</div>
+</div>
+<div class="product-card product"><img src="./img/Nigeria Soccer Jersey.jfif" class="animate-gentle">
+  <div class="p-5">
+<p class="font-extrabold">Nigeria Jersey</p>
+<div class="flex space-x-2 "><p>#40,000</p><p class="line-through">#42,000</p></div>
+
+<div class="mt-5">
+  <select class="jersey-size w-full border rounded-lg p-3 mb-4">
+
+    <option value="">Choose Size</option>
+
+    <option value="S">Small (S)</option>
+
+    <option value="M">Medium (M)</option>
+
+    <option value="L">Large (L)</option>
+
+    <option value="XL">Extra Large (XL)</option>
+
+    <option value="XXL">2XL</option>
+
+</select>
+  
+  <button
+    class="add-cart w-full bg-black text-white py-3 rounded-lg"
+
+    data-id="Nigeria"
+    data-name="Nigeria Jersey"
+    data-price="40000"
+    data-image="img/Nigeria Soccer Jersey.jfif">
+
+      Add to Cart
+
+    </button></div>
+
+</div>
+</div>
+
+
+  
+  </div>
+  
+</div>
+
+ <div id="pagination" class="max-w-7xl mx-auto px-6 ">
 
   </div>
-  <a href="./jersey.html" class="border-b">See all products <i class="fa-solid fa-arrow-right-long"></i></a>
-</div>
 
    
 
@@ -573,27 +860,26 @@
 <!------jersey boots-->
 <div class="max-w-7xl mx-auto px-6">
 <div class="flex flex-wrap">
-<div class="flex-1 "><div class="relative">
+<div class="flex-1 animate-gentle">
   <img src="./img/vini🤍.jfif" alt="" class="h-200 object-cover rounded-xl">
-<p class="absolute bottom-0 left-4"> <a href="./jersey.html">shop collection <i class="fa-solid fa-arrow-right-long"></i></a></p>
-</div></div>
+
+</div>
 <div class="flex-1">
   <div class="relative">
     <img src="./img/www_ioffer.com_selling_copper4flash" alt="" class="h-100 object-contain rounded-xl">
-  <p class="absolute bottom-0 left-4"><a href="./jersey.html">shop collection <i class="fa-solid fa-arrow-right-long"></i></a> </p></div>
+  </div>
  <div class="relative"><img src="./img/Bota adidas F50 Messi Elite FG.jfif" alt=""class="h-100 object-contain rounded-xl">
-<p class="absolute bottom-0 left-4"><a href="./jersey.html">shop collection <i class="fa-solid fa-arrow-right-long"></i></a> </p></div> 
+</div> 
 </div>
 </div>
 <h1 class="mt-10 font-extrabold mb-6 text-2xl">Premier League</h1>
 <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 mb-6 gap-2">
-<div><img src="./img/Chelsea FC Home 2025-26.jfif" class="object-contain"></div>
+
 <div><img src="./img/Liverpool Logo.jfif" class="object-contain">
 </div>
 <div>
   <img src="./img/Newcastle United Fc Vector Logo _ TopPNG.jfif" class="object-contain"></div>
 <div><img src="./img/Nottingham Forest.jfif" class="object-contain"></div>
-<div><img src="./img/Arsenal Third Jersey 25-26 Season Player Version.jfif" class="object-contain"></div>
 
   </div>
 <h1 class="mt-10 font-extrabold mb-6 text-2xl">La liga</h1>
@@ -614,16 +900,10 @@
 <div class="flex flex-col md:flex-row p-6 space-y-6">
 <div class="flex-1 space-y-4">
 <div><h1 class="font-extrabold">ADIMCHI-stores</h1>
-<p>Terms and condition</p>
-<a href="./jersey.html"><p>shop</p></a></div>
+
+<a href="#shop"><p>shop</p></a></div>
 </div>
- <div class="flex-1 space-y-4">
-<div><h1 class="font-extrabold">Customer Service</h1>
-<p>FAQ</p>
-<p>Contact</p>
-<p>Privacy</p>
-<p>Return and Refunds</p></div>
-</div>
+ 
 <div class="flex-1 space-y-4">
 <div><h1 class="font-extrabold ">Contact us</h1>
 <p>Do you have any suggestions?</p>
@@ -637,12 +917,17 @@
 <div><h1 class="font-extrabold"> social media</h1>
   <a href="https://www.instagram.com/adimchinaobi9/?__pwa=1#">
             <i class="fa-brands fa-instagram"></i></a>
-          <a href="https://wa.me/2348169270270"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://wa.me/2348169270270?text=Hello,I'm interested in purchasing a jersey."
+          ><i class="fa-brands fa-whatsapp"></i></a>
           <a href="tel:+2348067449346"><i class="fa-solid fa-phone"></i></a>
           <a href="mailto:chimnaonuel@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+         
           
 </div>
 </div>
+  </div>
+  <div class="border-t flex justify-center pb-4">
+    <p><i class="fa-regular fa-copyright"></i> copyright 2026</p> 
   </div>
  
 </div>

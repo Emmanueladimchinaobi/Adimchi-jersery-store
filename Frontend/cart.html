@@ -9,30 +9,11 @@
     <title>Document</title>
 </head>
 <body class="h-auto">
-    <nav class="bg-white text-black shadow-md fixed z-50 w-full top-0 h-auto">
+  <nav class="bg-white text-black shadow-md fixed z-50 w-full top-0 h-auto ">
   <div class="max-w-7xl mx-auto px-6  ">
-
-    <div class="flex justify-between items-center p-6 border-b">
-
-    <h1 class="text-2xl font-bold">My Store</h1>
-
-    <a href="./cart.html" class="relative">
-
-        🛒
-
-        <span id="cart-count"
-        class="absolute -top-2 -right-3 bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-
-        0
-
-        </span>
-
-    </a>
-
-  </div>
     
     <div class="flex items-center justify-between p-6 ">
-       <h1 class=" font-extrabold  ">ADIMCHI-stores</h1>
+       
     
 
     <!-- Desktop Menu -->
@@ -138,27 +119,37 @@
     
 
          </div>
-       <div class="relative group ">
-        <button id="shop-btn">
-              shop
-       </button>
-      <div id="shop-menu" class="hidden  absolute left-0 px-6 py-4  w-30 z-50 bg-white shadow-xl h-auto">
-<ul>
-  <li class="border-b ">shop</li>
-  <li class="border-b ">Cart</li>
-  <li class="border-b">whishlist</li>
-</ul>
-      </div></div>   
-             <a href="./services.html" class="">
+         
+             <a href="https://wa.me/2348169270270?text=Hello,I'm interested in purchasing a jersey." class="">
               contact
             </a>
         </div>
         
+<div><a href="./cart.html" class="relative text-2xl">
 
+        🛒 
+
+        <span id="cart-count"
+        class="absolute -top-2 -right-3 bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+
+        0
+
+        </span>
+
+    </a></div>
+     
+      <div>
         <!-- Hamburger -->
-    <button id="menuBtn" class="lg:hidden absolute  right-6 text-3xl mt-2">
+    <button id="menuBtn" class="lg:hidden  text-3xl right-0 ">
       ☰
     </button>
+      </div>
+    
+    
+    
+
+    
+    
   </div>
 
   </div>
@@ -166,33 +157,37 @@
   <!-- Full Screen Mobile Menu -->
   <div
     id="mobileMenu"
-    class="fixed inset-0 bg-white text-black z-50 hidden px-4 py-4 flex-col space-y-8 text-xl lg:hidden "
+    class=" fixed inset-0 bg-white text-black z-50
+         flex-col space-y-8 text-xl lg:hidden
+         opacity-0 -translate-x-full
+         pointer-events-none
+         transition-all duration-700 ease-in-out left-0"
   >
     <!-- Close Button -->
-    <button id="closeBtn" class="absolute top-2 right-6 text-3xl mt-2">
+    <button id="closeBtn" class="absolute  right-6 text-3xl mt-2">
       ✕
     </button>
 
 <ul class="list-none"><li class="list-none">
-          <a href="./index.html" class="block px-6 py-4  border-b mt-10  list-none">
+          <a href="./index.html" class="block px-6 py-4  border-b mt-10  list-none t">
             Home
           </a>
  <a href="./index.html" class="block px-6 py-4  border-b   list-none">
             About
           </a>
-                   <div id="main-menu"
-     class="absolute   transition-transform duration-300 translate-x-0">
+                   
 
-  <div class="block px-6 py-4   -mt-2  " ><button id="clubs-btn2" class="group-hover:block">Club
+  <div class="block px-6 py-4 border-b " ><button id="clubsbtn2" class="group-hover:block">Club
   </button></div>
-</div>
+
 
 <!-- Submenu --> 
 <div id="submenu"
      class="fixed inset-0  z-50 flex-col
-      bg-white text-black shadow-xl transition-transform duration-300 translate-x-full h-auto">
+      bg-white text-black shadow-xl transition-all duration-700 ease-in-out -translate-x-full h-auto opacity-0  pointer-events-none
+      left-0">
 
-  <button id="back-btn" class="p-4">
+  <button id="backbtn" class="p-4">
     ← Back
   </button>
 
@@ -247,23 +242,21 @@
   <p class="block px-6" style="font-size: xx-small;">Los ches official </p>
 
 </div>
-<a href="./index.html" class="block px-6 py-4  border-b border-t mt-16  list-none">
-            Shop
-          </a>
 
-               <div id="brands-menu"
-     class="absolute   transition-transform duration-300 translate-x-0">
 
-  <div class="block px-6 py-4 p-5  mt-16 " ><button id="brands-btn" > Brands
+               
+
+  <div class="block px-6 py-4 border-b"><button id="Brandbtn2" class="group-hover:block"> Brands
   </button></div>
-</div>
+
 
 <!-- Submenu --> 
-<div id="brands-submenu"
-     class="fixed inset-0  z-50 flex-col
-      bg-white text-black shadow-xl transition-transform duration-300 translate-x-full h-auto">
+<div id="brandsubmenu"
+     class="fixed inset-0 bg-white text-black z-50
+         flex-col space-y-8 text-xl lg:hidden
+         transition-all duration-700 ease-in-out -translate-x-full h-auto opacity-0  pointer-events-none right-0 ">
 
-  <button id="brand-backbtn" class="p-4">
+  <button id="brandbackbtn" class="p-4">
     ← Back
   </button>
   <div class="flex flex-wrap">
@@ -287,7 +280,8 @@
 </div>
 
           
-          <a href="./index.html" class="block px-6 py-4  border-b   list-none">
+          <a href="https://wa.me/2348169270270?text=Hello,I'm interested in purchasing a jersey."
+           class="block px-6 py-4  border-b   list-none">
             contact
           </a>
     </div> 
@@ -354,22 +348,16 @@
 
     </section>
 
-
-<footer class="w-full bg-amber-50 h-auto p-10 ">
+<!-------footer-->
+<footer class="w-full bg-amber-50 h-auto  ">
   <div class="max-w-7xl mx-auto px-6">
-<div class="flex flex-col md:flex-row">
+<div class="flex flex-col md:flex-row p-6 space-y-6">
 <div class="flex-1 space-y-4">
 <div><h1 class="font-extrabold">ADIMCHI-stores</h1>
-<p>Terms and condition</p>
-<p>shop</p></div>
+
+<a href="#shop"><p>shop</p></a></div>
 </div>
- <div class="flex-1 space-y-4">
-<div><h1 class="font-extrabold">Customer Service</h1>
-<p>FAQ</p>
-<p>Contact</p>
-<p>Privacy</p>
-<p>Return and Refunds</p></div>
-</div>
+ 
 <div class="flex-1 space-y-4">
 <div><h1 class="font-extrabold ">Contact us</h1>
 <p>Do you have any suggestions?</p>
@@ -383,16 +371,21 @@
 <div><h1 class="font-extrabold"> social media</h1>
   <a href="https://www.instagram.com/adimchinaobi9/?__pwa=1#">
             <i class="fa-brands fa-instagram"></i></a>
-          <a href="https://wa.me/2348169270270"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://wa.me/2348169270270?text=Hello,I'm interested in purchasing a jersey."
+          ><i class="fa-brands fa-whatsapp"></i></a>
           <a href="tel:+2348067449346"><i class="fa-solid fa-phone"></i></a>
           <a href="mailto:chimnaonuel@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+         
           
 </div>
 </div>
   </div>
+  <div class="border-t flex justify-center pb-4">
+    <p><i class="fa-regular fa-copyright"></i> copyright 2026</p> 
+  </div>
  
 </div>
-  </div>
+  
 
 
 
