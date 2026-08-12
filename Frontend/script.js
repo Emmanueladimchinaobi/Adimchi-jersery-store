@@ -110,10 +110,10 @@ brandbackbtn.addEventListener("click", () => {
 
 
  const images = [
-      "img/download (24).jfif",
+      "img/download (24).jfif" , 
       "img/Football kit wallpaper for smartphone.jfif",
-      "img/Juventus.jfif",
-      "img/download (24).jfif"
+      
+      "img/download (24).jfif "
   ];
 
     let currentIndex = 0;
