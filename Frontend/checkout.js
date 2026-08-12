@@ -99,6 +99,10 @@ if (placeOrderBtn) {
 
     placeOrderBtn.addEventListener("click", async () => {
 
+        // Disable the button immediately
+        placeOrderBtn.disabled = true;
+        placeOrderBtn.textContent = "Placing Order...";
+
         const customerName = document.getElementById("customerName").value.trim();
 
         const phone = document.getElementById("phone").value.trim();
