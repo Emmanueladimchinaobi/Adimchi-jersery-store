@@ -50,14 +50,14 @@ cart.forEach(item => {
             </p>
 
             <p class="font-semibold">
-                ₦${item.price.toLocaleString()}
+                $${item.price.toLocaleString()}
             </p>
 
         </div>
 
         <div class="font-bold text-lg">
 
-            ₦${itemTotal.toLocaleString()}
+            $${itemTotal.toLocaleString()}
 
         </div>
 
@@ -70,7 +70,7 @@ cart.forEach(item => {
 
 
 grandTotal.textContent =
-"₦" + total.toLocaleString();
+"$" + total.toLocaleString();
 
 
 

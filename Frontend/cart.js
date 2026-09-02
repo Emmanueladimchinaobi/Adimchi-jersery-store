@@ -17,7 +17,7 @@ function displayCart() {
             </p>
         `;
 
-        total.textContent = "Total: ₦0";
+        total.textContent = "Total: $0";
 
         return;
     }
@@ -48,7 +48,7 @@ function displayCart() {
                 </p>
 
                 <p class="text-gray-600 mt-2">
-                    ₦${item.price.toLocaleString()}
+                    $${item.price.toLocaleString()}
                 </p>
 
                 <div class="flex items-center gap-3 mt-4">
@@ -76,7 +76,7 @@ function displayCart() {
             <div class="text-right">
 
                 <p class="font-bold text-lg">
-                    ₦${itemTotal.toLocaleString()}
+                    $${itemTotal.toLocaleString()}
                 </p>
 
                 <button
@@ -95,7 +95,7 @@ function displayCart() {
     });
 
     total.textContent =
-        "Total: ₦" + totalPrice.toLocaleString();
+        "Total: $" + totalPrice.toLocaleString();
 
     localStorage.setItem("cart", JSON.stringify(cart));
 }
